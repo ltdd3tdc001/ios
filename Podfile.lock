@@ -1,0 +1,83 @@
+PODS:
+  - Alamofire (4.4.0)
+  - AlamofireObjectMapper (4.1.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 2.0)
+  - HanekeSwift (0.10.1)
+  - MVVM-Swift (1.1.0)
+  - ObjcExceptionBridging (1.0.1):
+    - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
+  - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
+  - ObjectMapper (2.2.6)
+  - ObjectMapper_RealmSwift (0.1.1):
+    - ObjectMapper (~> 2.2)
+    - RealmSwift (~> 2.3)
+  - Realm (2.8.3):
+    - Realm/Headers (= 2.8.3)
+  - Realm/Headers (2.8.3)
+  - RealmSwift (2.8.3):
+    - Realm (= 2.8.3)
+  - SwiftLint (0.16.1)
+  - SwiftUtils (2.1.1)
+  - XCGLogger (5.0.1):
+    - XCGLogger/Core (= 5.0.1)
+  - XCGLogger/Core (5.0.1):
+    - ObjcExceptionBridging
+  - YouTubePlayer-Swift (1.0)
+
+DEPENDENCIES:
+  - Alamofire (= 4.4.0)
+  - AlamofireObjectMapper (~> 4.0)
+  - HanekeSwift (from `https://github.com/Haneke/HanekeSwift.git`, branch `feature/swift-3`)
+  - MVVM-Swift
+  - ObjectMapper (= 2.2.6)
+  - ObjectMapper_RealmSwift
+  - RealmSwift (~> 2.8.3)
+  - SwiftLint (= 0.16.1)
+  - SwiftUtils (= 2.1.1)
+  - XCGLogger
+  - YouTubePlayer-Swift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireObjectMapper
+    - MVVM-Swift
+    - ObjcExceptionBridging
+    - ObjectMapper
+    - ObjectMapper_RealmSwift
+    - Realm
+    - RealmSwift
+    - SwiftLint
+    - SwiftUtils
+    - XCGLogger
+    - YouTubePlayer-Swift
+
+EXTERNAL SOURCES:
+  HanekeSwift:
+    :branch: feature/swift-3
+    :git: https://github.com/Haneke/HanekeSwift.git
+
+CHECKOUT OPTIONS:
+  HanekeSwift:
+    :commit: 2f6d87f1f725d204d85cb34492e8c399cd5a200f
+    :git: https://github.com/Haneke/HanekeSwift.git
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
+  HanekeSwift: 4113367892828e7700d24a384027de6ebc79aad1
+  MVVM-Swift: 54749cc12bb30af41632f30a2c576a18bf9e4bc8
+  ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
+  ObjectMapper: 042708195cc46c20871cbcbec0453826398273fd
+  ObjectMapper_RealmSwift: 0441cec446754c58d8cf55f177311144f011f72c
+  Realm: 3601ef091c8c499a31101d8563b991e75546cdce
+  RealmSwift: 8183818515471b01a99abdd2970f8e4fd52b6f4a
+  SwiftLint: b8b683208cc09640898f16318a7a452274e91f61
+  SwiftUtils: 3f79be4fec34ac8b7c95d2ec15c9feebe81f1fc1
+  XCGLogger: 0b43697155d41e4a1b15fc776f319c2141646b09
+  YouTubePlayer-Swift: ae82f4bcb504162a872b852596a9dc1fa3828c34
+
+PODFILE CHECKSUM: 5f6427adcd6b0f332dd63766807bd749bd582827
+
+COCOAPODS: 1.5.3
