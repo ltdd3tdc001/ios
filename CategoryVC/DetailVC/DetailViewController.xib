@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="Youtube_Debug" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="eOo-kP-AmA" id="TU1-xr-tYf"/>
+                <outlet property="videoPlayer" destination="kvH-A2-Hfw" id="VB4-cN-sN2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fl0-Uf-0TW">
+                    <rect key="frame" x="0.0" y="200" width="375" height="467"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QoI-KH-czL">
+                            <rect key="frame" x="0.0" y="417" width="375" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="MYC-3Q-7d0"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eOo-kP-AmA">
+                            <rect key="frame" x="5" y="0.0" width="365" height="417"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.10827202349901199" green="0.1083889827132225" blue="0.10829015821218491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="QoI-KH-czL" firstAttribute="leading" secondItem="fl0-Uf-0TW" secondAttribute="leading" id="1hR-nL-Yvx"/>
+                        <constraint firstItem="eOo-kP-AmA" firstAttribute="leading" secondItem="fl0-Uf-0TW" secondAttribute="leading" constant="5" id="1px-57-3sW"/>
+                        <constraint firstAttribute="bottom" secondItem="QoI-KH-czL" secondAttribute="bottom" id="7UL-F3-05t"/>
+                        <constraint firstItem="eOo-kP-AmA" firstAttribute="top" secondItem="fl0-Uf-0TW" secondAttribute="top" id="Dck-m5-kc9"/>
+                        <constraint firstAttribute="trailing" secondItem="QoI-KH-czL" secondAttribute="trailing" id="ILU-QQ-CU0"/>
+                        <constraint firstItem="QoI-KH-czL" firstAttribute="top" secondItem="eOo-kP-AmA" secondAttribute="bottom" id="W17-yd-C9e"/>
+                        <constraint firstAttribute="trailing" secondItem="eOo-kP-AmA" secondAttribute="trailing" constant="5" id="aRb-oc-jbR"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kvH-A2-Hfw" customClass="YouTubePlayerView" customModule="YouTubePlayer_Swift">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="OBg-ai-26K"/>
+                        <constraint firstAttribute="width" secondItem="kvH-A2-Hfw" secondAttribute="height" multiplier="15:8" id="Zos-NL-Boi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fl0-Uf-0TW" secondAttribute="trailing" id="7GN-YX-eHp"/>
+                <constraint firstAttribute="trailing" secondItem="kvH-A2-Hfw" secondAttribute="trailing" id="CnE-DO-l6Y"/>
+                <constraint firstItem="fl0-Uf-0TW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="L0D-ob-39l"/>
+                <constraint firstItem="fl0-Uf-0TW" firstAttribute="top" secondItem="kvH-A2-Hfw" secondAttribute="bottom" id="PzQ-7f-ja3"/>
+                <constraint firstItem="kvH-A2-Hfw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="j6d-gj-klW"/>
+                <constraint firstItem="kvH-A2-Hfw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tcJ-A4-jAB"/>
+                <constraint firstAttribute="bottom" secondItem="fl0-Uf-0TW" secondAttribute="bottom" id="x97-mo-sc5"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

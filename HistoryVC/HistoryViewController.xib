@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HistoryViewController" customModule="Youtube_Debug" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="jQG-rw-V54" id="jdZ-XK-LrE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jQG-rw-V54">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="627"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6bL-A9-pEs">
+                    <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="K3j-Bg-q4y"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="6bL-A9-pEs" secondAttribute="bottom" id="0Zl-0F-oqj"/>
+                <constraint firstItem="6bL-A9-pEs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Lu7-ho-F4E"/>
+                <constraint firstItem="jQG-rw-V54" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ma3-Yh-9SZ"/>
+                <constraint firstItem="jQG-rw-V54" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="O4M-kf-03W"/>
+                <constraint firstAttribute="trailing" secondItem="jQG-rw-V54" secondAttribute="trailing" id="YxM-Nv-p7h"/>
+                <constraint firstAttribute="trailing" secondItem="6bL-A9-pEs" secondAttribute="trailing" id="i1i-rV-yKz"/>
+                <constraint firstItem="6bL-A9-pEs" firstAttribute="top" secondItem="jQG-rw-V54" secondAttribute="bottom" id="nHd-RV-dCd"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
+        </view>
+    </objects>
+</document>
